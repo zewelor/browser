@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 module Browser
   class Device
-    class TV < Base
+    class Android < Base
       def id
-        :tv
+        :unknown
       end
 
       def name
-        "TV"
+        ua[/\(Linux.*?; Android.*?; ([-_a-z0-9 ]+) Build[^)]+\)/i, 1] || "Unknown"
       end
 
       def match?
-        ua =~ /(\btv|Android.*?ADT-1|Nexus Player)/i
+        ua =~ /Android/
       end
     end
   end

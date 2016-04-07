@@ -40,6 +40,7 @@ require "browser/platform/adobe_air"
 
 require "browser/device"
 require "browser/device/base"
+require "browser/device/android"
 require "browser/device/unknown"
 require "browser/device/ipad"
 require "browser/device/ipod_touch"

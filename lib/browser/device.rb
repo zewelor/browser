@@ -23,6 +23,7 @@ module Browser
         Iphone,
         Ipad,
         IpodTouch,
+        Android,
         Unknown
       ]
     end
